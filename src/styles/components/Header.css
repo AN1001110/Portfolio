@@ -1,0 +1,101 @@
+/* ! start Header style */
+:root {
+  --neo1: #00ff00;
+  --neo2: #7cfc00;
+  --neo3: #32cd32;
+  --header-color: rgb(1, 20, 13,0.97);
+ 
+}
+
+header .container {
+  padding:var(--main-padding) ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  height: 9vh;
+  width: 100%;
+  border-bottom: rgb(0, 255, 0) solid 0.5px;
+  background-color: var(--header-color);
+
+  box-shadow: 0 0 5px 5px rgb(0, 255, 0, 0.3);
+}
+header .container .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 900;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(
+    45deg,
+    var(--neo1),
+    var(--neo2),
+    var(--neo3)
+  );
+  color: transparent;
+}
+
+header .container ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 10vw;
+}
+header .container ul li {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  position: relative;
+}
+header .container ul li::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
+  background-color: var(--neo1);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+header .container ul li:hover::before {
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+}
+header .container ul li a:visited {
+  color: var(--neo1);
+}
+header .container ul li a {
+  font-size: 0.8rem;
+  color: var(--neo1);
+  text-wrap: nowrap;
+  text-decoration: none;
+  padding: 5px;
+}
+
+header .container ul li a span {
+  margin-left: 5px;
+}
+/*end Header style */

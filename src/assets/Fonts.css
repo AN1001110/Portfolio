@@ -1,0 +1,58 @@
+/* LeagueSpartan font  */
+
+
+/* Thin - الوزن 100 */
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("./fonts/LeagueSpartan-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Light - الوزن 300 */
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("./fonts/LeagueSpartan-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Regular - الوزن 400 */
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("./fonts/LeagueSpartan-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Medium - الوزن 500 */
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("./fonts/LeagueSpartan-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* SemiBold - الوزن 600 */
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("./fonts/LeagueSpartan-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Bold - الوزن 700 */
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("./fonts/LeagueSpartan-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Black - الوزن 900 */
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("./fonts/LeagueSpartan-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}

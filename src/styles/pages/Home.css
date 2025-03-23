@@ -1,0 +1,193 @@
+/*?Global */
+:root {
+  --main-padding: 20px;
+}
+/* Section 1 */
+section .container {
+  padding: var(--main-padding);
+}
+.sec1 .container .Home {
+  animation: flipIn backwards 0.8s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: calc(80vh - 20px);
+  width: 100%;
+ 
+  
+}
+.sec1 .container .Home .title {
+  display: flex;
+  flex-direction: column;
+}
+.sec1 .container .Home .title h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  margin-left: -64px;
+  font-family: cursive, "Courier New", Courier, monospace;
+  letter-spacing: 10px;
+  font-weight: 700;
+}
+.sec1 .container .Home .title h1 {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 72px;
+}
+.sec1 .container .Home .title span {
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(
+    45deg,
+    var(--neo1),
+    var(--neo2),
+    var(--neo3)
+  );
+  color: transparent;
+}
+.sec1 .container .Home h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.sec1 .container .Home h3 span {
+  position: relative;
+}
+
+.sec1 .container .Home p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 64px;
+  background-color: #1e4726;
+  padding: 10px 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.sec1 .container .Home p:hover {
+  background-color: #1e4e28;
+}
+.sec1 .container .Home .title-bts {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.sec1 .container .Home .title-bts .btn {
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  padding: 16px;
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -ms-border-radius: 26px;
+  -o-border-radius: 26px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+.sec1 .container .Home .title-bts .btn1 {
+  background-image: linear-gradient(
+    45deg,
+    var(--neo1),
+    var(--neo3),
+    var(--neo2)
+  );
+}
+.sec1 .container .Home .title-bts .btn1:hover {
+  box-shadow: 0 0 12px 1px rgba(61, 203, 61, 0.5);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+.sec1 .container .Home .title-bts .btn2 {
+  background-color: #1e2b20;
+}
+.sec1 .container .Home .title-bts .btn2:hover {
+  box-shadow:0 0  12px 1px rgba(61, 203, 61, 0.5);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+.sec1 .container .Home .icon {
+  position: absolute;
+  bottom: 0;
+  animation: backwards 2s linear;
+  -webkit-animation: arrow backwards 1s 0.5s infinite;
+  font-size: 24px;
+}
+
+/* ! Animations  Sec1*/
+@keyframes flipIn {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+    -webkit-transform: translateY(10%);
+    -moz-transform: translateY(10%);
+    -ms-transform: translateY(10%);
+    -o-transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+@keyframes arrow {
+  50% {
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+/* Section 2 */
+.sec2 .container h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 72px;
+  font-style: italic;
+  letter-spacing: 10px;
+  font-family: cursive, "Courier New", Courier, monospace;
+  margin-top: 0;
+}
+.sec2 .container .services {
+ 
+ 
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(350px, auto));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
