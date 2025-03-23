@@ -1,7 +1,7 @@
 :root {
-  --neo1: rgba(0, 255, 0);
-  --neo2: hsla(90, 100%, 49%);
-  --neo3: rgb(50, 205, 50);
+  --neo1: rgba(0, 255, 0, 0.8);
+  --neo2: hsla(90, 100%, 49%, 0.8);
+  --neo3: rgb(50, 205, 50,0.8);
   --backColor1: #121212;
   --backColor2: #011805;
   --main-padding: 20px;
