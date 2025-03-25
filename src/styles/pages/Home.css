@@ -12,7 +12,6 @@ section .container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-height: calc(80vh - 20px);
   width: 100%;
  
   
