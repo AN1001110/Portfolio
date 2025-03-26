@@ -4,12 +4,11 @@
 }
 /* Section 1 */
 .sec1 .container {
-
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: var(--main-padding);
-  height: 100vh;
+  height: 90vh;
 }
 .sec1 .container .Home {
   animation: flipIn backwards 0.8s;
@@ -19,6 +18,7 @@ align-items: center;
   flex-direction: column;
   width: 100%;
   padding: var(--main-padding);
+  -webkit-animation: flipIn backwards 0.8s;
 }
 .sec1 .container .Home .title {
   display: flex;
@@ -198,7 +198,7 @@ align-items: center;
 /* Responsive Screens */
 
 /*  phones */
-@media (min-width: 320px) and (max-width : 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .container {
     width: 100%;
   }
