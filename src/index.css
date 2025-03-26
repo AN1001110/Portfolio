@@ -1,4 +1,7 @@
 :root {
+  * {
+    box-sizing: border-box;
+  }
   --neo1: rgba(0, 255, 0, 0.9);
   --neo2: hsla(90, 100%, 49%, 0.9);
   --neo3: rgb(50, 205, 50,0.9);
@@ -6,13 +9,9 @@
   --backColor2: #011805;
   --main-padding: 20px;
 }
-
 a {
   text-decoration: none;
   color: white;
-}
-* {
-  box-sizing: border-box;
 }
 body {
  
@@ -33,5 +32,7 @@ body::selection {
 body {
   padding-top: 11vh;
 }
-
+.container {
+  margin: auto 0;
+}
 

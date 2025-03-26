@@ -9,6 +9,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+ 
   align-items: center;
   flex-direction: column;
   background-color: #0c1c06;
@@ -37,14 +38,17 @@
   position: absolute;
   left: 20px;
   top: 20px;
-  font-size: 32px;
+  font-size: 2rem;
 }
 .sec2 .container .services .serviceCard h3 {
   margin: 0;
   margin-top: 30px;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
   text-wrap: nowrap;
+}
+.sec2 .container .services .serviceCard p{
+  font-size: 1rem;
 }
 @keyframes scroll {
   from {
@@ -62,5 +66,22 @@
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
+  }
+}
+/* responsive */
+@media (min-width: 320px) and (max-width: 767px) {
+  .sec2 .container .services .serviceCard {
+    width: 200px;
+    height: 120px;
+  }
+  .sec2 .container .services .serviceCard .icon{
+    font-size: 0.7rem;
+  }
+  .sec2 .container .services .serviceCard h3{
+    font-size: 0.7rem;
+
+  }
+  .sec2 .container .services .serviceCard p {
+    font-size: 0.5rem;
   }
 }

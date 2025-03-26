@@ -3,12 +3,12 @@
   --neo1: #00ff00;
   --neo2: #7cfc00;
   --neo3: #32cd32;
-  --header-color: rgb(1, 20, 13,0.97);
- 
+  --header-color: rgb(1, 20, 13, 0.97);
 }
 
 header .container {
-  padding:var(--main-padding) ;
+  position: relative;
+  padding: var(--main-padding);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,7 +19,6 @@ header .container {
   width: 100%;
   border-bottom: rgb(0, 255, 0) solid 0.5px;
   background-color: var(--header-color);
-
   box-shadow: 0 0 5px 5px rgb(0, 255, 0, 0.3);
 }
 header .container .logo {
@@ -41,20 +40,22 @@ header .container .logo {
   );
   color: transparent;
 }
-
+header .container .bar {
+  display: none;
+}
 header .container ul {
   display: flex;
   list-style-type: none;
   align-items: center;
+  width: 100%;
   gap: 10vw;
 }
 header .container ul li {
   display: flex;
-  justify-content: space-between;
   font-weight: 600;
-  position: relative;
+  width: 100%;
 }
-header .container ul li::before {
+header .container ul li a::before {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -77,7 +78,7 @@ header .container ul li::before {
   -ms-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
 }
-header .container ul li:hover::before {
+header .container ul li a:hover::before {
   transform: scaleX(1);
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
@@ -88,14 +89,66 @@ header .container ul li a:visited {
   color: var(--neo1);
 }
 header .container ul li a {
-  font-size: 0.8rem;
+  position: relative;
+  font-size: 0.7rem;
   color: var(--neo1);
   text-wrap: nowrap;
   text-decoration: none;
   padding: 5px;
+  width: 100%;
 }
 
 header .container ul li a span {
   margin-left: 5px;
 }
 /*end Header style */
+/* responsive */
+@media (min-width: 320px) and (max-width: 767px) {
+  header .container .logo {
+    font-size: 0.7rem;
+  }
+  header .container .bar {
+    display: block;
+    position: absolute;
+    color: var(--neo1);
+    font-size: 1rem;
+    font-weight: bold;
+    right: 5%;
+    top: 30%;
+  }
+
+  header .container ul {
+    transition: all 0.8s  ease;
+    width: fit-content;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    top: 102%;
+    right: 0;
+    margin: 0;
+    background-color: var(--header-color);
+    gap: 5vw;
+    -webkit-transition: all 0.8s  ease;
+    -moz-transition: all 0.8s  ease;
+    -ms-transition: all 0.8s  ease;
+    -o-transition: all 0.8s  ease;
+}
+  header .container ul li {
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+    margin: 10px 0;
+    
+  }
+
+  header .container ul li a::before {
+  
+    left: 0;
+  }
+
+  header .container ul li a {
+    font-size: 0.6rem;
+  }
+}

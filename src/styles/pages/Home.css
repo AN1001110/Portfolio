@@ -3,8 +3,13 @@
   --main-padding: 20px;
 }
 /* Section 1 */
-section .container {
+.sec1 .container {
+
+display: flex;
+justify-content: center;
+align-items: center;
   padding: var(--main-padding);
+  height: 100vh;
 }
 .sec1 .container .Home {
   animation: flipIn backwards 0.8s;
@@ -13,25 +18,26 @@ section .container {
   align-items: center;
   flex-direction: column;
   width: 100%;
- 
-  
+  padding: var(--main-padding);
 }
 .sec1 .container .Home .title {
   display: flex;
   flex-direction: column;
 }
 .sec1 .container .Home .title h2 {
-  font-size: 32px;
-  margin-bottom: 16px;
-  margin-left: -64px;
-  font-family: cursive, "Courier New", Courier, monospace;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: cursive, "LeagueSpartan", Arial, Helvetica, sans-serif;
   letter-spacing: 10px;
   font-weight: 700;
+  position: relative;
+  left: -64px;
 }
 .sec1 .container .Home .title h1 {
   margin: 0;
   margin-bottom: 16px;
-  font-size: 72px;
+  font-size: 4.5rem;
+  text-wrap: nowrap;
 }
 .sec1 .container .Home .title span {
   background-clip: text;
@@ -48,7 +54,7 @@ section .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 32px;
+  font-size: 2rem;
   margin: 0;
   margin-bottom: 32px;
   font-weight: 600;
@@ -62,7 +68,7 @@ section .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 64px;
+  margin-bottom: 4rem;
   background-color: #1e4726;
   padding: 10px 20px;
   border-radius: 20px;
@@ -70,7 +76,7 @@ section .container {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 .sec1 .container .Home p:hover {
@@ -95,7 +101,7 @@ section .container {
   -o-border-radius: 26px;
   color: white;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .sec1 .container .Home .title-bts .btn1 {
   background-image: linear-gradient(
@@ -117,7 +123,7 @@ section .container {
   background-color: #1e2b20;
 }
 .sec1 .container .Home .title-bts .btn2:hover {
-  box-shadow:0 0  12px 1px rgba(61, 203, 61, 0.5);
+  box-shadow: 0 0 12px 1px rgba(61, 203, 61, 0.5);
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -126,10 +132,10 @@ section .container {
 }
 .sec1 .container .Home .icon {
   position: absolute;
-  bottom: 0;
+  bottom: -12%;
   animation: backwards 2s linear;
   -webkit-animation: arrow backwards 1s 0.5s infinite;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 /* ! Animations  Sec1*/
@@ -173,20 +179,71 @@ section .container {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 72px;
+  font-size: 4.5rem;
   font-style: italic;
   letter-spacing: 10px;
-  font-family: cursive, "Courier New", Courier, monospace;
+  font-family: cursive, "LeagueSpartan", Arial, Helvetica, sans-serif;
   margin-top: 0;
 }
 .sec2 .container .services {
- 
- 
   display: grid;
   justify-content: center;
+  justify-items: center;
   align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(350px, auto));
   gap: 40px;
   margin-bottom: 40px;
 }
 
+/* Responsive Screens */
+
+/*  phones */
+@media (min-width: 320px) and (max-width : 767px) {
+  .container {
+    width: 100%;
+  }
+  .sec1 .container .Home .title h2 {
+    font-size: 0.7rem;
+    left: -0.6rem;
+  }
+  .sec1 .container .Home .title h1 {
+    font-size: 1.6rem;
+  }
+  .sec1 .container .Home h3 {
+    font-size: 0.7rem;
+  }
+  .sec1 .container .Home p {
+    font-size: 0.4rem;
+    margin-bottom: 2rem;
+  }
+  .sec1 .container .Home .title-bts .btn {
+    padding: 10px;
+    font-size: 0.5rem;
+  }
+  .sec1 .container .Home .icon {
+    font-size: 0.5rem;
+  }
+  .sec2 .container h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Small Screens */
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+}
+
+/* Custom */
+
+@media (max-width: 1199px) {
+}
