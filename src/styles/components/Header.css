@@ -130,16 +130,12 @@ header .container ul li a span {
     right: 0;
     margin: 0;
     background-color: var(--header-color);
-    gap: 5vw;
-    -webkit-transition: all 0.8s  ease;
-    -moz-transition: all 0.8s  ease;
-    -ms-transition: all 0.8s  ease;
-    -o-transition: all 0.8s  ease;
+   gap: 0;
 }
   header .container ul li {
-    padding-left: var(--main-padding);
-    padding-right: var(--main-padding);
-    margin: 10px 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin:  var(--main-padding) 0;
     
   }
 
