@@ -17,7 +17,7 @@ export default function Header() {
       setScreenSize(window.innerWidth);
     });
   }, [screenSize]);
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   return (
     <header>
       <div className="container">

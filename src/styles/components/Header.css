@@ -118,7 +118,7 @@ header .container ul li a span {
   }
 
   header .container ul {
-    transition: all 0.8s  ease;
+    transition: all 0.8s ease;
     width: fit-content;
     padding: 0;
     flex-direction: column;
@@ -130,17 +130,15 @@ header .container ul li a span {
     right: 0;
     margin: 0;
     background-color: var(--header-color);
-   gap: 0;
-}
+    gap: 0;
+  }
   header .container ul li {
     padding-left: 25px;
     padding-right: 25px;
-    margin:  var(--main-padding) 0;
-    
+    margin: var(--main-padding) 0;
   }
 
   header .container ul li a::before {
-  
     left: 0;
   }
 
