@@ -126,12 +126,13 @@ header .container ul li a span {
     justify-items: center;
     align-items: center;
     position: absolute;
-    top: 102%;
+    top: 75%;
     right: 0;
     margin: 0;
     background-color: var(--header-color);
     gap: 0;
   }
+ 
   header .container ul li {
     padding-left: 25px;
     padding-right: 25px;

@@ -11,13 +11,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [show, setShow] = useState(false);
   const [screenSize, setScreenSize] = useState(window.innerWidth);
   useEffect(() => {
     window.addEventListener("resize", () => {
       setScreenSize(window.innerWidth);
     });
   }, [screenSize]);
-  const [show, setShow] = useState(false);
   return (
     <header>
       <div className="container">
