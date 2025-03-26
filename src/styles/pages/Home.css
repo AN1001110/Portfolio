@@ -27,7 +27,7 @@
 .sec1 .container .Home .title h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  font-family: cursive, "LeagueSpartan", Arial, Helvetica, sans-serif;
+  font-family: cursive, "LeagueSpartan", sans-serif,Arial, Helvetica;
   letter-spacing: 10px;
   font-weight: 700;
   position: relative;
@@ -182,7 +182,7 @@
   font-size: 4.5rem;
   font-style: italic;
   letter-spacing: 10px;
-  font-family: cursive, "LeagueSpartan", Arial, Helvetica, sans-serif;
+  font-family: cursive, "LeagueSpartan", sans-serif,Arial, Helvetica;
   margin-top: 15%;
   margin-bottom: 15%;
 }
