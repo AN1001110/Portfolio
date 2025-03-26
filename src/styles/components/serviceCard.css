@@ -5,11 +5,10 @@
 .sec2 .container .services .serviceCard {
   animation: scroll linear ;
   animation-timeline: view();
-  animation-range: entry 0 cover 30%;
+  animation-range: entry 0 cover 20%;
   position: relative;
   display: flex;
   justify-content: center;
- 
   align-items: center;
   flex-direction: column;
   background-color: #0c1c06;
