@@ -232,6 +232,15 @@
 /* Small Screens */
 
 @media (min-width: 768px) and (max-width: 991px) {
+  
+  .sec1 .container .Home .title h2 {
+    font-size: 2.3rem;
+    left: -2.8rem;
+  }
+  .sec1 .container .Home .title h1 {
+    font-size: 3.5rem;
+  }
+
 }
 
 /* Medium Screens */
