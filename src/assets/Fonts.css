@@ -1,8 +1,8 @@
 /* LeagueSpartan font  */
 
-
 /* Thin - الوزن 100 */
 @font-face {
+  font-display: fallback;
   font-family: "LeagueSpartan";
   src: url("./fonts/LeagueSpartan-Thin.ttf") format("truetype");
   font-weight: 100;
@@ -11,6 +11,7 @@
 
 /* Light - الوزن 300 */
 @font-face {
+  font-display: fallback;
   font-family: "LeagueSpartan";
   src: url("./fonts/LeagueSpartan-Light.ttf") format("truetype");
   font-weight: 300;
@@ -19,6 +20,7 @@
 
 /* Regular - الوزن 400 */
 @font-face {
+  font-display: fallback;
   font-family: "LeagueSpartan";
   src: url("./fonts/LeagueSpartan-Regular.ttf") format("truetype");
   font-weight: 400;
@@ -27,6 +29,7 @@
 
 /* Medium - الوزن 500 */
 @font-face {
+  font-display: fallback;
   font-family: "LeagueSpartan";
   src: url("./fonts/LeagueSpartan-Medium.ttf") format("truetype");
   font-weight: 500;
@@ -35,6 +38,7 @@
 
 /* SemiBold - الوزن 600 */
 @font-face {
+  font-display: fallback;
   font-family: "LeagueSpartan";
   src: url("./fonts/LeagueSpartan-SemiBold.ttf") format("truetype");
   font-weight: 600;
@@ -43,6 +47,7 @@
 
 /* Bold - الوزن 700 */
 @font-face {
+  font-display: fallback;
   font-family: "LeagueSpartan";
   src: url("./fonts/LeagueSpartan-Bold.ttf") format("truetype");
   font-weight: 700;
@@ -51,6 +56,7 @@
 
 /* Black - الوزن 900 */
 @font-face {
+  font-display: fallback;
   font-family: "LeagueSpartan";
   src: url("./fonts/LeagueSpartan-Black.ttf") format("truetype");
   font-weight: 900;

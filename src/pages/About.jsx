@@ -20,6 +20,7 @@ export default function About() {
             so far has focused on mastering the art of turning static designs
             into dynamic, user-friendly interfaces with precision.
           </p>
+          
         </div>
       </section>
       <section className="sec2-about">
@@ -53,10 +54,10 @@ export default function About() {
         <div className="container">
           <h2>*Why Work With Me?*</h2>
           <ul>
-            <li>🔹 Strong grasp of core web fundamentals </li>
-            <li>🔹 Systematic approach to problem-solving</li>
-            <li>🔹 Hunger to absorb feedback and improve </li>
-            <li>🔹 Basic version control with Git</li>
+            <li> Strong grasp of core web fundamentals </li>
+            <li> Systematic approach to problem-solving</li>
+            <li> Hunger to absorb feedback and improve </li>
+            <li> Basic version control with Git</li>
           </ul>
           <h3>*Looking For* A supportive environment to:</h3>
           <ul>
