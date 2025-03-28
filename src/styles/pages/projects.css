@@ -1,0 +1,15 @@
+.sec1-projects .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec1-projects .container .projectsCards {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+  gap: 40px;
+  margin-bottom: 15%;
+}

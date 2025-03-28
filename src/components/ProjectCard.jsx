@@ -24,15 +24,17 @@ export default function ProjectCard({
       <div className="cardContent">
         <h3>{title}</h3>
         <p>{content}</p>
-        <Link to={repo} target="_blank">
-          <FontAwesomeIcon icon={faGithub} />
-          <div>Repository</div>
-        </Link>
-        <Link to={demo} target="_blank">
-          <FontAwesomeIcon icon={faPlayCircle} />
-          <div>Live Demo</div>
-        </Link>
         <div className="tools">{tools}</div>
+        <div className="links">
+          <Link to={repo} target="_blank">
+            <FontAwesomeIcon className="projectIcon" icon={faGithub} />
+            <span>Repository</span>
+          </Link>
+          <Link to={demo} target="_blank">
+            <FontAwesomeIcon className="projectIcon" icon={faPlayCircle} />
+            <span>Live Demo</span>
+          </Link>
+        </div>
       </div>
     </div>
   );

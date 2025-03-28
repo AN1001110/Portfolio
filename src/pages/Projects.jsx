@@ -13,16 +13,39 @@ export default function Projects() {
       <Header />
       <section className="sec1-projects">
         <div className="container">
-          <ProjectCard
-            title={"Agriculture GPA Calc"}
-            imgSrc={agriCalc}
-            content={
-              "GPA Calculator With Agriculture Deign For Students of Faculty of Agriculture "
-            }
-            toolsList={["Html", "Css", "Js"]}
-            demo={"https://agri-gpa.netlify.app"}
-            repo = {"https://github.com/AN1001110/Agri-GPA"}
-          />
+          <div className="skills"></div>
+          <div className="projectsCards">
+            <ProjectCard
+              title={"Agriculture GPA Calc"}
+              imgSrc={agriCalc}
+              content={
+                "GPA Calculator With Agriculture Deign For Students of Faculty of Agriculture "
+              }
+              toolsList={["Html", "Css", "Js"]}
+              demo={"https://agri-gpa.netlify.app"}
+              repo={"https://github.com/AN1001110/Agri-GPA"}
+            />
+            <ProjectCard
+              title={"Agriculture GPA Calc"}
+              imgSrc={agriCalc}
+              content={
+                "GPA Calculator With Agriculture Deign For Students of Faculty of Agriculture "
+              }
+              toolsList={["Html", "Css", "Js"]}
+              demo={"https://agri-gpa.netlify.app"}
+              repo={"https://github.com/AN1001110/Agri-GPA"}
+            />
+            <ProjectCard
+              title={"Agriculture GPA Calc"}
+              imgSrc={agriCalc}
+              content={
+                "GPA Calculator With Agriculture Deign For Students of Faculty of Agriculture "
+              }
+              toolsList={["Html", "Css", "Js"]}
+              demo={"https://agri-gpa.netlify.app"}
+              repo={"https://github.com/AN1001110/Agri-GPA"}
+            />
+          </div>
         </div>
       </section>
       <Footer />
