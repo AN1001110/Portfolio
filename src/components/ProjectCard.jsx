@@ -20,9 +20,7 @@ export default function ProjectCard({
   });
   return (
     <div className="projectCard">
-     
-        <img src={imgSrc} alt="Not Found" />
-    
+      <img src={imgSrc} alt="Not Found" />
       <div className="cardContent">
         <h3>{title}</h3>
         <p>{content}</p>
