@@ -10,6 +10,6 @@
   justify-items: center;
   align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(400px, auto));
-  gap: 40px;
+  gap: 100px;
   margin-bottom: 15%;
 }
