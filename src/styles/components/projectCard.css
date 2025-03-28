@@ -1,5 +1,7 @@
 :root {
   --projectCardColor: #0c1c06;
+  --projectCardColor2: #0b1c04;
+  
 }
 .projectCard {
   animation: scroll linear;
@@ -88,7 +90,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2b4023;
+  background-color:var(--projectCardColor2);
   width: 100px;
   padding: 5px 10px;
   font-size: 0.8rem;
