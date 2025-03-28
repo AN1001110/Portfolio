@@ -32,7 +32,7 @@ export default function ProjectCard({
           </Link>
           <Link to={demo} target="_blank">
             <FontAwesomeIcon className="projectIcon" icon={faPlayCircle} />
-            <span>Live Demo</span>
+            <span> Show Live</span>
           </Link>
         </div>
       </div>

@@ -1,15 +1,82 @@
-.sec1-projects .container {
+.sec1-projects .container,
+.sec2-projects .container {
+  animation: flipIn backwards 0.8s;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  -webkit-animation: name duration timing-function delay iteration-count
+    direction fill-mode;
 }
-.sec1-projects .container .projectsCards {
+.sec1-projects .container .skills {
   width: 100%;
   display: grid;
   justify-content: center;
   justify-items: center;
   align-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  gap: 50px;
+  margin-bottom: 15%;
+}
+.sec1-projects .container .skills .skill {
+  transition: all 0.3s ease;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 0 0 5px rgba(61, 203, 61, 0.7);
+  background-color: (--projectCardColor);
+}
+.sec1-projects .container .skills .skill:hover {
+  box-shadow: 0 0 10px rgba(61, 203, 61, 0.7);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+.sec1-projects .container .skills .skill img {
+  width: 80px;
+  height: 80px;
+}
+.sec1-projects .container .skills .skill h3 {
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.sec1-projects .container h2,
+.sec2-projects .container h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 4.5rem;
+  font-style: italic;
+  letter-spacing: 10px;
+  font-family: cursive, "LeagueSpartan", sans-serif, Arial, Helvetica;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+.sec2-projects .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec2-projects .container .projectsCards {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(450px, auto));
   gap: 100px;
   margin-bottom: 15%;
 }
