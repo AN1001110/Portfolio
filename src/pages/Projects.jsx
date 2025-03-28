@@ -29,7 +29,7 @@ export default function Projects() {
     [gitLogo, "Git"],
     [githubLogo, "Github"],
     [viteLogo, "Vite"],
-    [vsLogo, "Vs code"],
+    [vsLogo, "VS code"],
   ];
 
   const logosCards = logos.map((logo, i) => {
