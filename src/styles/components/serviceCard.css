@@ -3,7 +3,7 @@
 }
 
 .sec2 .container .services .serviceCard {
-  animation: scroll linear ;
+  animation: scroll linear;
   animation-timeline: view();
   animation-range: entry 0 cover 25%;
   transition: all 0.3s ease;
@@ -46,7 +46,7 @@
   font-weight: bold;
   text-wrap: nowrap;
 }
-.sec2 .container .services .serviceCard p{
+.sec2 .container .services .serviceCard p {
   font-size: 1rem;
 }
 
@@ -56,12 +56,11 @@
     width: 200px;
     height: 120px;
   }
-  .sec2 .container .services .serviceCard .icon{
+  .sec2 .container .services .serviceCard .icon {
     font-size: 0.7rem;
   }
-  .sec2 .container .services .serviceCard h3{
+  .sec2 .container .services .serviceCard h3 {
     font-size: 0.7rem;
-
   }
   .sec2 .container .services .serviceCard p {
     font-size: 0.5rem;
