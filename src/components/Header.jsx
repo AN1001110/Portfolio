@@ -22,10 +22,6 @@ export default function Header() {
       setScreenOrientation(window.screen.orientation.type);
     });
   }, [screenSize, screenOrientation]);
-  console.log(screenOrientation)
-  console.log(screenSize)
-  
-
   return (
     <header>
       <div className="container">
