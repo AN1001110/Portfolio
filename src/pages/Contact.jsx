@@ -60,13 +60,21 @@ export default function Contact() {
             </button>
           </form>
           <div className="contact-Links">
-            <Link to="https://t.me/AN0x10" className="link" target="_blank"  >
+            <Link to="https://t.me/AN0x10" className="link" target="_blank">
               <FontAwesomeIcon icon={faTelegram} />
             </Link>
-            <Link to="https://github.com/AN1001110" className="link" target="_blank">
+            <Link
+              to="https://github.com/AN1001110"
+              className="link"
+              target="_blank"
+            >
               <FontAwesomeIcon icon={faGithub} />
             </Link>
-            <Link to="https://www.linkedin.com/in/an1000" className="link" target="_blank">
+            <Link
+              to="https://www.linkedin.com/in/an1000"
+              className="link"
+              target="_blank"
+            >
               <FontAwesomeIcon icon={faLinkedin} />
             </Link>
           </div>
