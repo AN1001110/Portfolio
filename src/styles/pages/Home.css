@@ -164,7 +164,7 @@
 /* Responsive Screens */
 
 /*  phones */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) , (max-width :  992px) and (orientation: landscape) {
   .container {
     width: 100%;
   }

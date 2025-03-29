@@ -7,7 +7,6 @@
 }
 
 header .container {
-  position: relative;
   padding: var(--main-padding);
   display: flex;
   justify-content: space-between;
@@ -103,7 +102,7 @@ header .container ul li a span {
 }
 /*end Header style */
 /* responsive */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) , (max-width : 992px) and (orientation: landscape) {
   header .container .logo {
     font-size: 0.7rem;
   }
@@ -132,7 +131,7 @@ header .container ul li a span {
     background-color: var(--header-color);
     gap: 0;
   }
- 
+
   header .container ul li {
     padding-left: 25px;
     padding-right: 25px;

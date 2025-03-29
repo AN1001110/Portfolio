@@ -1,39 +1,25 @@
-.sec1-about .container ,  .sec2-about .container ,.sec3-about .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 80vh;
-    padding: var(--main-padding);
+.sec1-about .container,
+.sec2-about .container,
+.sec3-about .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: var(--main-padding);
 }
-.sec1-about .container ul  ,  .sec2-about .container  ul ,.sec3-about .container ul {
-    list-style-type: none;
+.sec1-about .container ul,
+.sec2-about .container ul,
+.sec3-about .container ul {
+  list-style-type: none;
 }
 /* sec1 */
-.sec1-about .container  h1 {
-    margin: 0;
-    margin-bottom: 16px;
-    font-size: 4rem;
-    text-wrap: nowrap;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(
-      45deg,
-      var(--neo1),
-      var(--neo2),
-      var(--neo3)
-    );
-    color: transparent;
-}
-.sec1-about .container  p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 3rem;
-    padding: var(--main-padding);
-    background-clip: text;
+.sec1-about .container h1 {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 4rem;
+  text-wrap: nowrap;
+  background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(
     45deg,
@@ -42,48 +28,55 @@
     var(--neo3)
   );
   color: transparent;
-  letter-spacing: 0.2rem;
 }
-
+.sec1-about .container p ,.sec2-about .container p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 3rem;
+  padding: 2rem;
+  letter-spacing: 0.2rem;
+  color: white;
+}
 
 /* sec2 */
 
-.sec2-about .container  h2 {
-    
+.sec2-about .container h2 ,.sec3-about .container h2 {
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(
+    45deg,
+    var(--neo1),
+    var(--neo2),
+    var(--neo3)
+    );
+    color: transparent;
+    font-size: 2rem;
+    padding: 2rem;
+  }
+.sec2-about .container h2 + ul {
 }
-.sec2-about .container  h2 + ul  {
-
+.sec2-about .container h2 + ul li {
 }
-.sec2-about .container   h2  + ul li  {
 
+.sec2-about .container p + ul {
 }
-.sec2-about .container   p    {
-
-}
-.sec2-about .container   p  + ul  {
-
-}
-.sec2-about .container   p  + ul li  {
-
+.sec2-about .container p + ul li {
 }
 
 /* sec3 */
 
-.sec3-about .container  h2 {
-
+.sec3-about .container h2 {
 }
-.sec3-about .container  h2 + ul  {
-    
+.sec3-about .container h2 + ul {
 }
-.sec3-about .container  h2 + ul  li {
-
+.sec3-about .container h2 + ul li {
 }
-.sec3-about .container  h3 {
-
+.sec3-about .container h3 {
 }
-.sec3-about .container  h3 + ul   {
-
+.sec3-about .container h3 + ul {
 }
-.sec3-about .container  h3 + ul  li {
-
+.sec3-about .container h3 + ul li {
 }

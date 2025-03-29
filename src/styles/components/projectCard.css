@@ -40,7 +40,7 @@
 }
 .projectCard .cardContent {
   width: 100%;
-  height:100% ;
+  height: 100%;
   padding: var(--main-padding);
   display: flex;
   justify-content: center;
@@ -137,15 +137,15 @@
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
 }
-@media (min-width: 320px) and (max-width: 767px) {
-  .projectCard{
+@media (min-width: 320px) and (max-width: 767px) , (max-width :  992px) and (orientation: landscape) {
+  .projectCard {
     width: 265px;
     height: 320px;
   }
   .projectCard .cardContent h3 {
     font-size: 0.7rem;
   }
-  .projectCard .cardContent p  {
+  .projectCard .cardContent p {
     font-size: 0.7rem;
   }
   .projectCard .cardContent .tools .tool {
@@ -155,4 +155,3 @@
     font-size: 0.5rem;
   }
 }
-

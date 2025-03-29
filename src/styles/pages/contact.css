@@ -120,7 +120,7 @@
   color: #09a324;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) , (max-width : 992px) and (orientation: landscape) {
   .sec1-contact .container h1 {
     font-size: 1.6rem;
   }
@@ -143,4 +143,7 @@
   .sec1-contact .container .contact-Links .link {
     font-size: 0.7rem;
   }
+}
+.sec1-contact .container .contact-Links .link:hover {
+  font-size: 1rem;
 }

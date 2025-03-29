@@ -13,11 +13,19 @@ import { useEffect, useState } from "react";
 export default function Header() {
   const [show, setShow] = useState(false);
   const [screenSize, setScreenSize] = useState(window.innerWidth);
+  const [screenOrientation, setScreenOrientation] = useState(
+    window.screen.orientation.type
+  );
   useEffect(() => {
     window.addEventListener("resize", () => {
       setScreenSize(window.innerWidth);
+      setScreenOrientation(window.screen.orientation.type);
     });
-  }, [screenSize]);
+  }, [screenSize, screenOrientation]);
+  console.log(screenOrientation)
+  console.log(screenSize)
+  
+
   return (
     <header>
       <div className="container">
@@ -35,7 +43,18 @@ export default function Header() {
           </div>
           <ul
             style={{
-              display: show ? "flex" : screenSize < 768 ? "none" : "flex",
+              display:
+                screenOrientation === "portrait-primary"
+                  ? screenSize < 768
+                    ? show
+                      ? "flex"
+                      : "none"
+                    : "flex"
+                  : screenSize < 992
+                  ? show
+                    ? "flex"
+                    : "none"
+                  : "flex",
             }}
           >
             <li>

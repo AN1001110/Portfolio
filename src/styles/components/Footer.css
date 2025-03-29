@@ -18,9 +18,9 @@ footer .container {
 }
 
 /* responsive */
-@media (min-width: 320px) and (max-width: 767px) {
-  footer .container  span{
+@media (min-width: 320px) and (max-width: 767px),
+  (max-width: 992px) and (orientation: landscape) {
+  footer .container span {
     font-size: 0.5rem;
- 
-}
+  }
 }
