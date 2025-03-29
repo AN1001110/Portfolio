@@ -25,7 +25,7 @@ export default function About() {
       <section className="sec2-about">
         <div className="container">
           <h2>
-            *What I Do* With a creative and professional touch, I transform the
+            What I Do With a creative and professional touch, I transform the
             design into a tangible reality using:
           </h2>
           <ul>
@@ -38,8 +38,8 @@ export default function About() {
           <p>
             I excel at following design specifications meticulously while
             ensuring clean, semantic code structure. My work bridges the gap
-            between pre-made designs and functional web experiences. *My
-            Philosophy*
+            between pre-made designs and functional web experiences. My
+            Philosophy Is : 
           </p>
           <ul>
             <li>Every line of code is a chance to learn</li>
@@ -60,14 +60,14 @@ export default function About() {
           </ul>
           <h3>Looking For A supportive environment to:</h3>
           <ul>
-            <li>✓ Implement UI designs accurately </li>
-            <li>✓ Contribute to real-world projects </li>
-            <li>✓ Strengthen my technical foundations </li>
-            <li>✓ Learn industry best practices</li>
+            <li>Implement UI designs accurately </li>
+            <li>Contribute to real-world projects </li>
+            <li>Strengthen my technical foundations </li>
+            <li>Learn industry best practices</li>
           </ul>
-          <h2>
+         
             <Link to="/contact">Let’s grow together!</Link>
-          </h2>
+       
         </div>
       </section>
       <Footer />

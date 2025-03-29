@@ -1,6 +1,7 @@
 .sec1-about .container,
 .sec2-about .container,
 .sec3-about .container {
+  animation: flipIn backwards 0.8s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,11 +9,7 @@
   min-height: 100vh;
   padding: var(--main-padding);
 }
-.sec1-about .container ul,
-.sec2-about .container ul,
-.sec3-about .container ul {
-  list-style-type: none;
-}
+
 /* sec1 */
 .sec1-about .container h1 {
   margin: 0;
@@ -29,21 +26,23 @@
   );
   color: transparent;
 }
-.sec1-about .container p ,.sec2-about .container p {
+.sec1-about .container p,
+.sec2-about .container p {
+  width: 75%;
   display: flex;
-  align-items: center;
+  text-align: center;
   justify-content: center;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 3rem;
   padding: 2rem;
   letter-spacing: 0.2rem;
   color: white;
 }
 
-/* sec2 */
-
-.sec2-about .container h2 ,.sec3-about .container h2 {
+/* sec2 & sec3 */
+.sec2-about .container h2,
+.sec3-about .container h2 {
   background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(
@@ -51,32 +50,114 @@
     var(--neo1),
     var(--neo2),
     var(--neo3)
-    );
-    color: transparent;
-    font-size: 2rem;
-    padding: 2rem;
-  }
-.sec2-about .container h2 + ul {
+  );
+  color: transparent;
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: center;
 }
-.sec2-about .container h2 + ul li {
+.sec2-about .container ul,
+.sec3-about .container ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.6rem;
+  text-align: center;
+  padding: 0;
+}
+.sec2-about .container ul li,
+.sec3-about .container ul li {
+  font-size: 1.2em;
+  font-weight: 700;
 }
 
-.sec2-about .container p + ul {
-}
-.sec2-about .container p + ul li {
-}
-
-/* sec3 */
-
-.sec3-about .container h2 {
-}
-.sec3-about .container h2 + ul {
-}
-.sec3-about .container h2 + ul li {
-}
 .sec3-about .container h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(
+    45deg,
+    var(--neo1),
+    var(--neo2),
+    var(--neo3)
+  );
+  color: transparent;
 }
-.sec3-about .container h3 + ul {
-}
+
 .sec3-about .container h3 + ul li {
+  font-size: 1rem;
+}
+
+.sec3-about .container a {
+  margin: 20px;
+  background-image: linear-gradient(
+    45deg,
+    var(--neo1),
+    var(--neo2),
+    var(--neo3)
+  );
+  color: white;
+  padding: 2rem;
+  transition: all 0.2s ease-in-out;
+  padding: 10px 20px;
+  background-image: linear-gradient(
+    45deg,
+    var(--neo1),
+    var(--neo3),
+    var(--neo2)
+  );
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.sec3-about .container a:hover {
+  box-shadow: 0 0 12px 1px rgba(61, 203, 61, 0.5);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+@media (min-width: 320px) and (max-width: 767px),
+  (max-width: 992px) and (orientation: landscape) {
+  .sec1-about .container h1 {
+    font-size: 1.4rem;
+  }
+  .sec1-about .container p,
+  .sec2-about .container p {
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .sec2-about .container h2,
+  .sec3-about .container h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .sec2-about .container ul li,
+  .sec3-about .container ul li {
+    font-size: 0.8rem;
+    
+  }
+  .sec3-about .container h3 + ul li {
+    font-size: 0.7rem;
+  }
 }
