@@ -24,7 +24,7 @@ export default function Projects() {
     [htmlLogo, "Html"],
     [cssLogo, "Css"],
     [jsLogo, "Javascript"],
-    [tsLogo, "Typescrip"],
+    [tsLogo, "Typescript"],
     [reactLogo, "React"],
     [gitLogo, "Git"],
     [githubLogo, "Github"],
