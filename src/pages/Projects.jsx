@@ -3,8 +3,12 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProjectCard from "../components/ProjectCard";
 import "../styles/pages/projects.css";
+//  photos
 import agriCalc from "../assets/imgs/agri-calc.jpg";
-import anPortfolio from "../assets/imgs/anPortfolio.jpg"
+import anPortfolio from "../assets/imgs/anPortfolio.jpg";
+import almaheroun from "../assets/imgs/Almaheroun.jpg";
+
+// logos
 import htmlLogo from "../assets/imgs/html.svg";
 import cssLogo from "../assets/imgs/css.svg";
 import jsLogo from "../assets/imgs/js.svg";
@@ -14,7 +18,6 @@ import gitLogo from "../assets/imgs/git.svg";
 import githubLogo from "../assets/imgs/github.png";
 import viteLogo from "../assets/imgs/vite.svg";
 import vsLogo from "../assets/imgs/vscode.svg";
-
 
 export default function Projects() {
   useEffect(() => {
@@ -40,6 +43,45 @@ export default function Projects() {
       </div>
     );
   });
+  const projectsData = [
+    [
+      agriCalc,
+      "Agriculture GPA Calc",
+      "GPA Calculator With Agriculture Deign For Students of Faculty of Agriculture",
+      ["Html", "Css", "Js"],
+      "https://agri-gpa.netlify.app",
+      "https://github.com/AN1001110/Portfolio",
+    ],
+    [
+      anPortfolio,
+      "AN portfolio",
+      "This portfolio website was designed and coded by  AN , drawing design inspiration from other works.",
+      ["Vite", "React"],
+      "https://an-portfolio1x.vercel.app/",
+      "https://github.com/AN1001110/Portfolio",
+    ],
+    [
+      almaheroun,
+      "Al-Maheroun Academy",
+      "Al-Mahiroon Academy for Quran Memorization and Tajweed Mastery",
+      ["React", "React-slick", "js"],
+      "https://almaheroun-academy.vercel.app/",
+      "https://github.com/AN1001110/AlMaheroun-Academy",
+    ],
+  ];
+  const projects = projectsData.map((project, i) => {
+    return (
+      <ProjectCard
+        key={i}
+        imgSrc={project[0]}
+        title={project[1]}
+        content={project[2]}
+        toolsList={project[3]}
+        demo={project[4]}
+        repo={project[5]}
+      />
+    );
+  });
   return (
     <>
       <Header />
@@ -52,29 +94,7 @@ export default function Projects() {
       <section className="sec2-projects">
         <div className="container">
           <h2>Projects</h2>
-          <div className="projectsCards">
-            <ProjectCard
-              title={"Agriculture GPA Calc"}
-              imgSrc={agriCalc}
-              content={
-                "GPA Calculator With Agriculture Deign For Students of Faculty of Agriculture "
-              }
-              toolsList={["Html", "Css", "Js"]}
-              demo={"https://agri-gpa.netlify.app"}
-              repo={"https://github.com/AN1001110/Agri-GPA"}
-            />
-          
-            <ProjectCard
-              title={"AN portfolio"}
-              imgSrc={anPortfolio}
-              content={
-                "This portfolio website was designed and coded by  AN , drawing design inspiration from other works."
-              }
-              toolsList={["Vite", "React"]}
-              demo={"https://an-portfolio1x.vercel.app/"}
-              repo={"https://github.com/AN1001110/Portfolio"}
-            />
-          </div>
+          <div className="projectsCards">{projects}</div>
         </div>
       </section>
       <Footer />
